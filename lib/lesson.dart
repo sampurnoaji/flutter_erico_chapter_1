@@ -6,4 +6,5 @@ enum Lesson {
   Stateful_Widget,
   Anonymous_Method,
   Animated_Container,
+  Flexible_Widget
 }
