@@ -10,4 +10,5 @@ enum Lesson {
   Stack_Align_Widget,
   Image_Widget,
   Spacer_Widget,
+  Draggable
 }

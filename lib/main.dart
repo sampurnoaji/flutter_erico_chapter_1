@@ -2,6 +2,7 @@ import 'package:erico_intro/lesson.dart';
 import 'package:erico_intro/lesson/animated_container.dart';
 import 'package:erico_intro/lesson/column_widget.dart';
 import 'package:erico_intro/lesson/container_widget.dart';
+import 'package:erico_intro/lesson/draggable.dart';
 import 'package:erico_intro/lesson/flexible_widget.dart';
 import 'package:erico_intro/lesson/image_widget.dart';
 import 'package:erico_intro/lesson/row_widget.dart';
@@ -56,6 +57,8 @@ class MainPage extends StatelessWidget {
                             return ImageWidget();
                           case Lesson.Spacer_Widget:
                             return SpacerWidget();
+                          case Lesson.Draggable:
+                            return DraggablePage();
                         }
                       }));
                     },
