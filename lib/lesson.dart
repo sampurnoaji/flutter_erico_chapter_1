@@ -8,5 +8,6 @@ enum Lesson {
   Animated_Container,
   Flexible_Widget,
   Stack_Align_Widget,
-  Image_Widget
+  Image_Widget,
+  Spacer_Widget,
 }
