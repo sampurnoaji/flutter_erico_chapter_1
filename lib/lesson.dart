@@ -4,5 +4,6 @@ enum Lesson {
   Column_Widget,
   Container_Widget,
   Stateful_Widget,
-  Anonymous_Method
+  Anonymous_Method,
+  Animated_Container,
 }
