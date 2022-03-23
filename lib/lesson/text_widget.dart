@@ -14,6 +14,15 @@ class TextWidget extends StatelessWidget {
           maxLines: 2,
           textAlign: TextAlign.justify,
           overflow: TextOverflow.ellipsis,
+          style: TextStyle(
+            fontFamily: 'Poppins',
+            fontSize: 20,
+            fontStyle: FontStyle.italic,
+            decoration: TextDecoration.underline,
+            decorationColor: Colors.red,
+            decorationThickness: 2,
+            decorationStyle: TextDecorationStyle.wavy
+          ),
         ),
       ),
     );
