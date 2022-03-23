@@ -1,61 +1,58 @@
+import 'package:erico_intro/lesson.dart';
+import 'package:erico_intro/lesson/column_widget.dart';
+import 'package:erico_intro/lesson/container_widget.dart';
+import 'package:erico_intro/lesson/row_widget.dart';
+import 'package:erico_intro/lesson/stateful_widget_page.dart';
+import 'package:erico_intro/lesson/text_widget.dart';
 import 'package:flutter/material.dart';
 
-import 'lesson/anonymous_method_app.dart';
+import 'lesson/anonymous_method_page.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(MainPage());
 }
 
-class MyApp extends StatelessWidget {
+class MainPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
           appBar: AppBar(
-            title: Text('Aplikasi Hello World'),
+            title: Text('Flutter Fundamental 1'),
           ),
-          body: Container(
-            color: Colors.redAccent,
-            margin: EdgeInsets.all(10),
-            padding: EdgeInsets.fromLTRB(10, 15, 20, 25),
-            child: Container(
-              margin: EdgeInsets.only(bottom: 20),
-              decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                    colors: [Colors.amber, Colors.blue],
-                    begin: Alignment.topLeft,
-                    end: Alignment.bottomRight,
+          body: ListView(
+            children: [
+              for (final lesson in Lesson.values)
+                Builder(
+                  builder: (context) => InkWell(
+                    onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        switch (lesson) {
+                          case Lesson.Text_Widget:
+                            return TextWidget();
+                          case Lesson.Row_Widget:
+                            return RowWidget();
+                          case Lesson.Column_Widget:
+                            return ColumnWidget();
+                          case Lesson.Container_Widget:
+                            return ContainerWidget();
+                          case Lesson.Stateful_Widget:
+                            return StatefulWidgetPage();
+                          case Lesson.Anonymous_Method:
+                            return AnonymousMethodPage();
+                        }
+                      }));
+                    },
+                    child: Container(
+                      color: Colors.amber,
+                      margin: EdgeInsets.only(bottom: 2),
+                      padding: EdgeInsets.all(16),
+                      child: Text(lesson.name.toString()),
+                    ),
                   ),
-                  borderRadius: BorderRadius.circular(20)),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    'teks 1',
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 24,
-                        fontWeight: FontWeight.w700),
-                  ),
-                  Text(
-                    'saya sedang melatih kemampuan flutter saya saya sedang melatih kemampuan flutter saya saya sedang melatih kemampuan flutter saya',
-                    maxLines: 2,
-                    textAlign: TextAlign.justify,
-                    overflow: TextOverflow.ellipsis,
-                  ),
-                  Text('teks 3'),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text('teks 4'),
-                      Text('teks 5'),
-                      Text('teks 6'),
-                    ],
-                  )
-                ],
-              ),
-            ),
+                )
+            ],
           )),
     );
   }
