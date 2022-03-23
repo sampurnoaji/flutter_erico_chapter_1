@@ -4,6 +4,7 @@ import 'package:erico_intro/lesson/column_widget.dart';
 import 'package:erico_intro/lesson/container_widget.dart';
 import 'package:erico_intro/lesson/flexible_widget.dart';
 import 'package:erico_intro/lesson/row_widget.dart';
+import 'package:erico_intro/lesson/stack_align_widget.dart';
 import 'package:erico_intro/lesson/stateful_widget_page.dart';
 import 'package:erico_intro/lesson/text_widget.dart';
 import 'package:flutter/material.dart';
@@ -47,6 +48,8 @@ class MainPage extends StatelessWidget {
                             return AnimatedContainerPage();
                           case Lesson.Flexible_Widget:
                             return FlexibleWidget();
+                          case Lesson.Stack_Align_Widget:
+                            return StackAlignWidget();
                         }
                       }));
                     },
