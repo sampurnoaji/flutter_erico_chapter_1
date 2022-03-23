@@ -3,6 +3,7 @@ import 'package:erico_intro/lesson/animated_container.dart';
 import 'package:erico_intro/lesson/column_widget.dart';
 import 'package:erico_intro/lesson/container_widget.dart';
 import 'package:erico_intro/lesson/flexible_widget.dart';
+import 'package:erico_intro/lesson/image_widget.dart';
 import 'package:erico_intro/lesson/row_widget.dart';
 import 'package:erico_intro/lesson/stack_align_widget.dart';
 import 'package:erico_intro/lesson/stateful_widget_page.dart';
@@ -50,6 +51,8 @@ class MainPage extends StatelessWidget {
                             return FlexibleWidget();
                           case Lesson.Stack_Align_Widget:
                             return StackAlignWidget();
+                          case Lesson.Image_Widget:
+                            return ImageWidget();
                         }
                       }));
                     },

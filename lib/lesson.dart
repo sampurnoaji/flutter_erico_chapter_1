@@ -7,5 +7,6 @@ enum Lesson {
   Anonymous_Method,
   Animated_Container,
   Flexible_Widget,
-  Stack_Align_Widget
+  Stack_Align_Widget,
+  Image_Widget
 }
