@@ -1,6 +1,7 @@
 import 'package:erico_intro/lesson.dart';
 import 'package:erico_intro/lesson/animated_container.dart';
 import 'package:erico_intro/lesson/appbar_widget.dart';
+import 'package:erico_intro/lesson/card_widget.dart';
 import 'package:erico_intro/lesson/column_widget.dart';
 import 'package:erico_intro/lesson/container_widget.dart';
 import 'package:erico_intro/lesson/draggable.dart';
@@ -62,6 +63,8 @@ class MainPage extends StatelessWidget {
                             return DraggablePage();
                           case Lesson.AppBar_Widget:
                             return AppBarWidget();
+                          case Lesson.Card_Widget:
+                            return CardWidget();
                         }
                       }));
                     },

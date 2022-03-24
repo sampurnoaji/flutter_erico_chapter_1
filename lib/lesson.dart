@@ -11,5 +11,6 @@ enum Lesson {
   Image_Widget,
   Spacer_Widget,
   Draggable,
-  AppBar_Widget
+  AppBar_Widget,
+  Card_Widget
 }
