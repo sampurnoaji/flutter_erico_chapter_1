@@ -6,7 +6,6 @@ class AppBarWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: Icon(Icons.drag_handle_rounded),
         title: Text(Lesson.AppBar_Widget.name),
         actions: [
           IconButton(onPressed: () {}, icon: Icon(Icons.send)),
