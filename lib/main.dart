@@ -12,6 +12,7 @@ import 'package:erico_intro/lesson/spacer_widget.dart';
 import 'package:erico_intro/lesson/stack_align_widget.dart';
 import 'package:erico_intro/lesson/stateful_widget_page.dart';
 import 'package:erico_intro/lesson/text_widget.dart';
+import 'package:erico_intro/lesson/textfield_widget.dart';
 import 'package:flutter/material.dart';
 
 import 'lesson/anonymous_method_page.dart';
@@ -65,6 +66,8 @@ class MainPage extends StatelessWidget {
                             return AppBarWidget();
                           case Lesson.Card_Widget:
                             return CardWidget();
+                          case Lesson.TextField_Widget:
+                            return TextFieldWidget();
                         }
                       }));
                     },
