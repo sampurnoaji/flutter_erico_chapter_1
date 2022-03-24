@@ -7,6 +7,7 @@ import 'package:erico_intro/lesson/container_widget.dart';
 import 'package:erico_intro/lesson/draggable.dart';
 import 'package:erico_intro/lesson/flexible_widget.dart';
 import 'package:erico_intro/lesson/image_widget.dart';
+import 'package:erico_intro/lesson/inkwell_widget.dart';
 import 'package:erico_intro/lesson/media_query_page.dart';
 import 'package:erico_intro/lesson/row_widget.dart';
 import 'package:erico_intro/lesson/spacer_widget.dart';
@@ -71,6 +72,8 @@ class MainPage extends StatelessWidget {
                             return TextFieldWidget();
                           case Lesson.MediaQuery:
                             return MediaQueryPage();
+                          case Lesson.InkWell_Widget:
+                            return InkWellWidget();
                         }
                       }));
                     },

@@ -14,5 +14,6 @@ enum Lesson {
   AppBar_Widget,
   Card_Widget,
   TextField_Widget,
-  MediaQuery
+  MediaQuery,
+  InkWell_Widget
 }
