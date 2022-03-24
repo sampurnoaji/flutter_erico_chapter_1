@@ -13,5 +13,6 @@ enum Lesson {
   Draggable,
   AppBar_Widget,
   Card_Widget,
-  TextField_Widget
+  TextField_Widget,
+  MediaQuery
 }
