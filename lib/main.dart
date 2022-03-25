@@ -8,6 +8,7 @@ import 'package:erico_intro/lesson/draggable.dart';
 import 'package:erico_intro/lesson/flexible_widget.dart';
 import 'package:erico_intro/lesson/image_widget.dart';
 import 'package:erico_intro/lesson/inkwell_widget.dart';
+import 'package:erico_intro/lesson/login_page.dart';
 import 'package:erico_intro/lesson/media_query_page.dart';
 import 'package:erico_intro/lesson/row_widget.dart';
 import 'package:erico_intro/lesson/spacer_widget.dart';
@@ -16,17 +17,20 @@ import 'package:erico_intro/lesson/stateful_widget_page.dart';
 import 'package:erico_intro/lesson/text_widget.dart';
 import 'package:erico_intro/lesson/textfield_widget.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import 'lesson/anonymous_method_page.dart';
 
 void main() {
-  runApp(MainPage());
+  SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp])
+      .then((value) => runApp(MainPage()));
 }
 
 class MainPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
           appBar: AppBar(
             title: Text('Flutter Fundamental 1'),
@@ -74,6 +78,8 @@ class MainPage extends StatelessWidget {
                             return MediaQueryPage();
                           case Lesson.InkWell_Widget:
                             return InkWellWidget();
+                          case Lesson.Login_Page:
+                            return LoginPage();
                         }
                       }));
                     },
