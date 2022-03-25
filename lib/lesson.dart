@@ -17,4 +17,5 @@ enum Lesson {
   MediaQuery,
   InkWell_Widget,
   Login_Page,
+  Hero_ClipRRect_Widget
 }

@@ -6,6 +6,7 @@ import 'package:erico_intro/lesson/column_widget.dart';
 import 'package:erico_intro/lesson/container_widget.dart';
 import 'package:erico_intro/lesson/draggable.dart';
 import 'package:erico_intro/lesson/flexible_widget.dart';
+import 'package:erico_intro/lesson/hero_cliprrect_widget.dart';
 import 'package:erico_intro/lesson/image_widget.dart';
 import 'package:erico_intro/lesson/inkwell_widget.dart';
 import 'package:erico_intro/lesson/login_page.dart';
@@ -17,13 +18,11 @@ import 'package:erico_intro/lesson/stateful_widget_page.dart';
 import 'package:erico_intro/lesson/text_widget.dart';
 import 'package:erico_intro/lesson/textfield_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 
 import 'lesson/anonymous_method_page.dart';
 
 void main() {
-  SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp])
-      .then((value) => runApp(MainPage()));
+  runApp(MainPage());
 }
 
 class MainPage extends StatelessWidget {
@@ -80,6 +79,8 @@ class MainPage extends StatelessWidget {
                             return InkWellWidget();
                           case Lesson.Login_Page:
                             return LoginPage();
+                          case Lesson.Hero_ClipRRect_Widget:
+                            return HeroClipRRectWidget();
                         }
                       }));
                     },
