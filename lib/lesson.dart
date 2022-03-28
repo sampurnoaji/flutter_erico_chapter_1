@@ -21,5 +21,6 @@ enum Lesson {
   TabBar_Widget,
   QR_Code,
   Button_Rhomb,
-  Gradient_Opacity
+  Gradient_Opacity,
+  Audio_Player
 }

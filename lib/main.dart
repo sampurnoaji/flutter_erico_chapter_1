@@ -1,6 +1,7 @@
 import 'package:erico_intro/lesson.dart';
 import 'package:erico_intro/lesson/animated_container.dart';
 import 'package:erico_intro/lesson/appbar_widget.dart';
+import 'package:erico_intro/lesson/audio_player_page.dart';
 import 'package:erico_intro/lesson/button_rhomb.dart';
 import 'package:erico_intro/lesson/card_widget.dart';
 import 'package:erico_intro/lesson/column_widget.dart';
@@ -93,6 +94,8 @@ class MainPage extends StatelessWidget {
                             return ButtonRhombPage();
                           case Lesson.Gradient_Opacity:
                             return GradientOpacityPage();
+                          case Lesson.Audio_Player:
+                            return AudioPlayerPage();
                         }
                       }));
                     },
