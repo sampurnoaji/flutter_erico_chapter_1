@@ -15,6 +15,7 @@ import 'package:erico_intro/lesson/row_widget.dart';
 import 'package:erico_intro/lesson/spacer_widget.dart';
 import 'package:erico_intro/lesson/stack_align_widget.dart';
 import 'package:erico_intro/lesson/stateful_widget_page.dart';
+import 'package:erico_intro/lesson/tabbar_widget.dart';
 import 'package:erico_intro/lesson/text_widget.dart';
 import 'package:erico_intro/lesson/textfield_widget.dart';
 import 'package:flutter/material.dart';
@@ -81,6 +82,8 @@ class MainPage extends StatelessWidget {
                             return LoginPage();
                           case Lesson.Hero_ClipRRect_Widget:
                             return HeroClipRRectWidget();
+                          case Lesson.TabBar_Widget:
+                            return TabBarWidget();
                         }
                       }));
                     },
