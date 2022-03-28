@@ -20,5 +20,6 @@ enum Lesson {
   Hero_ClipRRect_Widget,
   TabBar_Widget,
   QR_Code,
-  Button_Rhomb
+  Button_Rhomb,
+  Gradient_Opacity
 }

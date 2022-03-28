@@ -7,6 +7,7 @@ import 'package:erico_intro/lesson/column_widget.dart';
 import 'package:erico_intro/lesson/container_widget.dart';
 import 'package:erico_intro/lesson/draggable.dart';
 import 'package:erico_intro/lesson/flexible_widget.dart';
+import 'package:erico_intro/lesson/gradient_opacity_page.dart';
 import 'package:erico_intro/lesson/hero_cliprrect_widget.dart';
 import 'package:erico_intro/lesson/image_widget.dart';
 import 'package:erico_intro/lesson/inkwell_widget.dart';
@@ -90,6 +91,8 @@ class MainPage extends StatelessWidget {
                             return QRCodePage();
                           case Lesson.Button_Rhomb:
                             return ButtonRhombPage();
+                          case Lesson.Gradient_Opacity:
+                            return GradientOpacityPage();
                         }
                       }));
                     },
