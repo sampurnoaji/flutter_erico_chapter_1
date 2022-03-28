@@ -19,5 +19,6 @@ enum Lesson {
   Login_Page,
   Hero_ClipRRect_Widget,
   TabBar_Widget,
-  QR_Code
+  QR_Code,
+  Button_Rhomb
 }

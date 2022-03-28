@@ -1,6 +1,7 @@
 import 'package:erico_intro/lesson.dart';
 import 'package:erico_intro/lesson/animated_container.dart';
 import 'package:erico_intro/lesson/appbar_widget.dart';
+import 'package:erico_intro/lesson/button_rhomb.dart';
 import 'package:erico_intro/lesson/card_widget.dart';
 import 'package:erico_intro/lesson/column_widget.dart';
 import 'package:erico_intro/lesson/container_widget.dart';
@@ -87,6 +88,8 @@ class MainPage extends StatelessWidget {
                             return TabBarWidget();
                           case Lesson.QR_Code:
                             return QRCodePage();
+                          case Lesson.Button_Rhomb:
+                            return ButtonRhombPage();
                         }
                       }));
                     },
