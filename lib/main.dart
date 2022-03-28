@@ -11,6 +11,7 @@ import 'package:erico_intro/lesson/image_widget.dart';
 import 'package:erico_intro/lesson/inkwell_widget.dart';
 import 'package:erico_intro/lesson/login_page.dart';
 import 'package:erico_intro/lesson/media_query_page.dart';
+import 'package:erico_intro/lesson/qrcode_page.dart';
 import 'package:erico_intro/lesson/row_widget.dart';
 import 'package:erico_intro/lesson/spacer_widget.dart';
 import 'package:erico_intro/lesson/stack_align_widget.dart';
@@ -84,6 +85,8 @@ class MainPage extends StatelessWidget {
                             return HeroClipRRectWidget();
                           case Lesson.TabBar_Widget:
                             return TabBarWidget();
+                          case Lesson.QR_Code:
+                            return QRCodePage();
                         }
                       }));
                     },

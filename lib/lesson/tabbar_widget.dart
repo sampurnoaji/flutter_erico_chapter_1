@@ -21,7 +21,7 @@ class TabBarWidget extends StatelessWidget {
         length: 4,
         child: Scaffold(
           appBar: AppBar(
-              title: Text(Lesson.Container_Widget.name),
+              title: Text(Lesson.TabBar_Widget.name),
               bottom: PreferredSize(
                   preferredSize: Size.fromHeight(myTabBar.preferredSize.height),
                   child: Container(color: Colors.amber, child: myTabBar))),

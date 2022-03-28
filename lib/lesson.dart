@@ -18,5 +18,6 @@ enum Lesson {
   InkWell_Widget,
   Login_Page,
   Hero_ClipRRect_Widget,
-  TabBar_Widget
+  TabBar_Widget,
+  QR_Code
 }
