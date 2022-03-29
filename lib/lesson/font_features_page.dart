@@ -8,7 +8,7 @@ class FontFeaturesPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text(Lesson.Container_Widget.name),
+          title: Text(Lesson.Font_Features.name),
         ),
         body: Center(
           child: Column(
