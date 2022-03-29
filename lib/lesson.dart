@@ -22,5 +22,6 @@ enum Lesson {
   QR_Code,
   Button_Rhomb,
   Gradient_Opacity,
-  Audio_Player
+  Audio_Player,
+  Font_Features
 }

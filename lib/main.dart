@@ -8,6 +8,7 @@ import 'package:erico_intro/lesson/column_widget.dart';
 import 'package:erico_intro/lesson/container_widget.dart';
 import 'package:erico_intro/lesson/draggable.dart';
 import 'package:erico_intro/lesson/flexible_widget.dart';
+import 'package:erico_intro/lesson/font_features_page.dart';
 import 'package:erico_intro/lesson/gradient_opacity_page.dart';
 import 'package:erico_intro/lesson/hero_cliprrect_widget.dart';
 import 'package:erico_intro/lesson/image_widget.dart';
@@ -96,6 +97,8 @@ class MainPage extends StatelessWidget {
                             return GradientOpacityPage();
                           case Lesson.Audio_Player:
                             return AudioPlayerPage();
+                          case Lesson.Font_Features:
+                            return FontFeaturesPage();
                         }
                       }));
                     },

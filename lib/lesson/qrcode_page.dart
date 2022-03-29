@@ -1,4 +1,4 @@
-import 'package:barcode_scan/barcode_scan.dart';
+// import 'package:barcode_scan/barcode_scan.dart';
 import 'package:erico_intro/lesson.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -31,27 +31,27 @@ class _QRCodePageState extends State<QRCodePage> {
                 padding: EdgeInsets.all(20),
               ),
               Text(barcode),
-              RaisedButton(
-                onPressed: () async {
-                  try {
-                    var result = await BarcodeScanner.scan();
-                    setState(() {
-                      this.barcode = result.rawContent;
-                    });
-                  } on PlatformException catch (error) {
-                    if (error.code == BarcodeScanner.cameraAccessDenied) {
-                      setState(() {
-                        this.barcode = 'Izin kamera tidak diizinkan oleh si pengguna';
-                      });
-                    } else {
-                      setState(() {
-                        this.barcode = 'Error: $error';
-                      });
-                    }
-                  }
-                },
-                child: Text('Scan'),
-              )
+              // RaisedButton(
+              //   onPressed: () async {
+              //     try {
+              //       var result = await BarcodeScanner.scan();
+              //       setState(() {
+              //         this.barcode = result.rawContent;
+              //       });
+              //     } on PlatformException catch (error) {
+              //       if (error.code == BarcodeScanner.cameraAccessDenied) {
+              //         setState(() {
+              //           this.barcode = 'Izin kamera tidak diizinkan oleh si pengguna';
+              //         });
+              //       } else {
+              //         setState(() {
+              //           this.barcode = 'Error: $error';
+              //         });
+              //       }
+              //     }
+              //   },
+              //   child: Text('Scan'),
+              // )
             ],
           ),
         ));
