@@ -12,7 +12,7 @@ import 'package:erico_intro/lesson/flexible_widget.dart';
 import 'package:erico_intro/lesson/font_features_page.dart';
 import 'package:erico_intro/lesson/gradient_opacity_page.dart';
 import 'package:erico_intro/lesson/hero_cliprrect_widget.dart';
-import 'package:erico_intro/lesson/http/http_post.dart';
+import 'package:erico_intro/lesson/http/http_request.dart';
 import 'package:erico_intro/lesson/image_widget.dart';
 import 'package:erico_intro/lesson/inkwell_widget.dart';
 import 'package:erico_intro/lesson/login_page.dart';
@@ -103,8 +103,8 @@ class MainPage extends StatelessWidget {
                             return FontFeaturesPage();
                           case Lesson.ClipPath:
                             return ClipPathPage();
-                          case Lesson.Http_Post:
-                            return HttpPostPage();
+                          case Lesson.Http_Request:
+                            return HttpRequestPage();
                         }
                       }));
                     },

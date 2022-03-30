@@ -1,20 +1,22 @@
 import 'package:erico_intro/lesson.dart';
 import 'package:erico_intro/model/post_result_model.dart';
+import 'package:erico_intro/model/user_model.dart';
 import 'package:flutter/material.dart';
 
-class HttpPostPage extends StatefulWidget {
+class HttpRequestPage extends StatefulWidget {
   @override
-  State<HttpPostPage> createState() => _HttpPostPageState();
+  State<HttpRequestPage> createState() => _HttpRequestPageState();
 }
 
-class _HttpPostPageState extends State<HttpPostPage> {
-  PostResult? postResult = null;
+class _HttpRequestPageState extends State<HttpRequestPage> {
+  PostResult? postResult;
+  User? user;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text(Lesson.Http_Post.name),
+          title: Text(Lesson.Http_Request.name),
         ),
         body: Center(
           child: Column(
@@ -27,12 +29,22 @@ class _HttpPostPageState extends State<HttpPostPage> {
                 onPressed: () {
                   PostResult.postUser('Marko', 'Penembak jitu').then((value) {
                     postResult = value;
-                        setState(() {
-
-                        });
+                    setState(() {});
                   });
                 },
                 child: Text('POST'),
+              ),
+              Text((user != null)
+                  ? '${user?.id} | ${user?.firstName} ${user?.lastName}'
+                  : 'Tidak ada data'),
+              RaisedButton(
+                onPressed: () {
+                  User.getUser('3').then((value) {
+                    user = value;
+                    setState(() {});
+                  });
+                },
+                child: Text('GET'),
               )
             ],
           ),

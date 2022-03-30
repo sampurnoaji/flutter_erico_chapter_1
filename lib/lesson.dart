@@ -25,5 +25,5 @@ enum Lesson {
   Gradient_Opacity,
   Audio_Player,
   Font_Features,
-  Http_Post
+  Http_Request
 }
