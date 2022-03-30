@@ -11,6 +11,7 @@ class HttpRequestPage extends StatefulWidget {
 class _HttpRequestPageState extends State<HttpRequestPage> {
   PostResult? postResult;
   User? user;
+  String? users;
 
   @override
   Widget build(BuildContext context) {
@@ -44,7 +45,20 @@ class _HttpRequestPageState extends State<HttpRequestPage> {
                     setState(() {});
                   });
                 },
-                child: Text('GET'),
+                child: Text('GET OBJECT'),
+              ),
+              Text((users != null) ? '$users' : 'Tidak ada data'),
+              RaisedButton(
+                onPressed: () {
+                  User.getUsers('1').then((value) {
+                    users = '';
+                    for (int i = 0; i < value.length; i++) {
+                      users = '$users\n${value[i].firstName}';
+                    }
+                    setState(() {});
+                  });
+                },
+                child: Text('GET LIST'),
               )
             ],
           ),
