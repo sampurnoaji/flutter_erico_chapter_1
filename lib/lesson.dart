@@ -24,5 +24,6 @@ enum Lesson {
   Button_Rhomb,
   Gradient_Opacity,
   Audio_Player,
-  Font_Features
+  Font_Features,
+  Http_Post
 }
