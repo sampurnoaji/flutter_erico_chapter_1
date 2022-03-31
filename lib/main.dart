@@ -20,6 +20,7 @@ import 'package:erico_intro/lesson/media_query_page.dart';
 import 'package:erico_intro/lesson/padding_widget.dart';
 import 'package:erico_intro/lesson/qrcode_page.dart';
 import 'package:erico_intro/lesson/row_widget.dart';
+import 'package:erico_intro/lesson/shared_pref_page.dart';
 import 'package:erico_intro/lesson/spacer_widget.dart';
 import 'package:erico_intro/lesson/stack_align_widget.dart';
 import 'package:erico_intro/lesson/stateful_widget_page.dart';
@@ -111,6 +112,8 @@ class MainPage extends StatelessWidget {
                             return SwitchWidget();
                           case Lesson.Padding:
                             return AnimatedPaddingPage();
+                          case Lesson.Shared_Pref:
+                            return SharedPrefPage();
                         }
                       }));
                     },
