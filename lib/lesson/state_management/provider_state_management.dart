@@ -10,7 +10,7 @@ class ProviderStateManagement extends StatelessWidget {
       providers: [ChangeNotifierProvider(create: (_) => ApplicationColor())],
       child: Scaffold(
           appBar: AppBar(
-            title: Text(Lesson.Provider_state_management.name),
+            title: Text(Lesson.Provider_State_Management.name),
             backgroundColor: Colors.black,
           ),
           body: Builder(

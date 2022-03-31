@@ -29,6 +29,7 @@ import 'package:erico_intro/lesson/switch_widget.dart';
 import 'package:erico_intro/lesson/tabbar_widget.dart';
 import 'package:erico_intro/lesson/text_widget.dart';
 import 'package:erico_intro/lesson/textfield_widget.dart';
+import 'package:erico_intro/lesson/timer_page.dart';
 import 'package:flutter/material.dart';
 
 import 'lesson/anonymous_method_page.dart';
@@ -115,8 +116,10 @@ class MainPage extends StatelessWidget {
                             return AnimatedPaddingPage();
                           case Lesson.Shared_Pref:
                             return SharedPrefPage();
-                          case Lesson.Provider_state_management:
+                          case Lesson.Provider_State_Management:
                             return ProviderStateManagement();
+                          case Lesson.Timer:
+                            return TimerPage();
                         }
                       }));
                     },

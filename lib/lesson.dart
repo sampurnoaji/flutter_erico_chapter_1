@@ -29,5 +29,6 @@ enum Lesson {
   Switch,
   Padding,
   Shared_Pref,
-  Provider_state_management
+  Provider_State_Management,
+  Timer
 }
