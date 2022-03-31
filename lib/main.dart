@@ -23,6 +23,7 @@ import 'package:erico_intro/lesson/row_widget.dart';
 import 'package:erico_intro/lesson/shared_pref_page.dart';
 import 'package:erico_intro/lesson/spacer_widget.dart';
 import 'package:erico_intro/lesson/stack_align_widget.dart';
+import 'package:erico_intro/lesson/state_management/provider_state_management.dart';
 import 'package:erico_intro/lesson/stateful_widget_page.dart';
 import 'package:erico_intro/lesson/switch_widget.dart';
 import 'package:erico_intro/lesson/tabbar_widget.dart';
@@ -114,6 +115,8 @@ class MainPage extends StatelessWidget {
                             return AnimatedPaddingPage();
                           case Lesson.Shared_Pref:
                             return SharedPrefPage();
+                          case Lesson.Provider_state_management:
+                            return ProviderStateManagement();
                         }
                       }));
                     },
