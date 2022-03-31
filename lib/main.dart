@@ -22,6 +22,7 @@ import 'package:erico_intro/lesson/row_widget.dart';
 import 'package:erico_intro/lesson/spacer_widget.dart';
 import 'package:erico_intro/lesson/stack_align_widget.dart';
 import 'package:erico_intro/lesson/stateful_widget_page.dart';
+import 'package:erico_intro/lesson/switch_widget.dart';
 import 'package:erico_intro/lesson/tabbar_widget.dart';
 import 'package:erico_intro/lesson/text_widget.dart';
 import 'package:erico_intro/lesson/textfield_widget.dart';
@@ -105,6 +106,8 @@ class MainPage extends StatelessWidget {
                             return ClipPathPage();
                           case Lesson.Http_Request:
                             return HttpRequestPage();
+                          case Lesson.Switch:
+                            return SwitchWidget();
                         }
                       }));
                     },

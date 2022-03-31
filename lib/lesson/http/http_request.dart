@@ -28,7 +28,7 @@ class _HttpRequestPageState extends State<HttpRequestPage> {
                   : 'Tidak ada data'),
               RaisedButton(
                 onPressed: () {
-                  PostResult.postUser('Marko', 'Penembak jitu').then((value) {
+                  PostResult.postUser('Aria Seto', 'Penembak jitu').then((value) {
                     postResult = value;
                     setState(() {});
                   });

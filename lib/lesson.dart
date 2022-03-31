@@ -25,5 +25,6 @@ enum Lesson {
   Gradient_Opacity,
   Audio_Player,
   Font_Features,
-  Http_Request
+  Http_Request,
+  Switch,
 }
