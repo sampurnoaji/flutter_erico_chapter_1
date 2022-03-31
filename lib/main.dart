@@ -17,6 +17,7 @@ import 'package:erico_intro/lesson/image_widget.dart';
 import 'package:erico_intro/lesson/inkwell_widget.dart';
 import 'package:erico_intro/lesson/login_page.dart';
 import 'package:erico_intro/lesson/media_query_page.dart';
+import 'package:erico_intro/lesson/padding_widget.dart';
 import 'package:erico_intro/lesson/qrcode_page.dart';
 import 'package:erico_intro/lesson/row_widget.dart';
 import 'package:erico_intro/lesson/spacer_widget.dart';
@@ -108,6 +109,8 @@ class MainPage extends StatelessWidget {
                             return HttpRequestPage();
                           case Lesson.Switch:
                             return SwitchWidget();
+                          case Lesson.Padding:
+                            return AnimatedPaddingPage();
                         }
                       }));
                     },

@@ -27,4 +27,5 @@ enum Lesson {
   Font_Features,
   Http_Request,
   Switch,
+  Padding
 }
