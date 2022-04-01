@@ -30,5 +30,6 @@ enum Lesson {
   Padding,
   Shared_Pref,
   Provider_State_Management,
+  Bloc_Fundamental,
   Timer
 }
