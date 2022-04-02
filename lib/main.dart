@@ -23,7 +23,7 @@ import 'package:erico_intro/lesson/row_widget.dart';
 import 'package:erico_intro/lesson/shared_pref_page.dart';
 import 'package:erico_intro/lesson/spacer_widget.dart';
 import 'package:erico_intro/lesson/stack_align_widget.dart';
-import 'package:erico_intro/lesson/state_management/bloc/bloc_fundamental.dart';
+import 'package:erico_intro/lesson/state_management/bloc/fundamental/bloc_fundamental.dart';
 import 'package:erico_intro/lesson/state_management/provider_state_management.dart';
 import 'package:erico_intro/lesson/stateful_widget_page.dart';
 import 'package:erico_intro/lesson/switch_widget.dart';
@@ -34,6 +34,7 @@ import 'package:erico_intro/lesson/timer_page.dart';
 import 'package:flutter/material.dart';
 
 import 'lesson/anonymous_method_page.dart';
+import 'lesson/state_management/bloc/library/bloc_library.dart';
 
 void main() {
   runApp(MainPage());
@@ -123,6 +124,8 @@ class MainPage extends StatelessWidget {
                             return TimerPage();
                           case Lesson.Bloc_Fundamental:
                             return BlocFundamentalPage();
+                          case Lesson.Bloc_Library:
+                            return BlocLibraryPage();
                         }
                       }));
                     },

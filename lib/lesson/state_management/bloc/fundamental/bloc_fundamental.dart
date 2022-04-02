@@ -1,5 +1,5 @@
 import 'package:erico_intro/lesson.dart';
-import 'package:erico_intro/lesson/state_management/bloc/color_bloc.dart';
+import 'package:erico_intro/lesson/state_management/bloc/fundamental/color_bloc.dart';
 import 'package:flutter/material.dart';
 
 class BlocFundamentalPage extends StatefulWidget {
@@ -20,7 +20,7 @@ class _BlocFundamentalPageState extends State<BlocFundamentalPage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text(Lesson.Container_Widget.name),
+          title: Text(Lesson.Bloc_Fundamental.name),
         ),
         floatingActionButton: Row(
           mainAxisAlignment: MainAxisAlignment.end,

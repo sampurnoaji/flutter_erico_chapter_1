@@ -31,5 +31,6 @@ enum Lesson {
   Shared_Pref,
   Provider_State_Management,
   Bloc_Fundamental,
+  Bloc_Library,
   Timer
 }
