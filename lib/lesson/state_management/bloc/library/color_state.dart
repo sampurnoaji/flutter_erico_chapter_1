@@ -1,6 +1,9 @@
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
 
+/// Class berisi state color yang didefinisikan
+/// * default: amber
+/// * color: amber, blue
 abstract class ColorState extends Equatable {
   Color color = Colors.amber;
 
